@@ -1,0 +1,13 @@
+.toggle {
+  flex-basis: 50%;
+}
+
+.title {
+  margin-top: 0px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon {
+  margin-left: 5px;
+}
