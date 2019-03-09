@@ -87,14 +87,6 @@ const params = {
 }
 
 class Todos extends React.Component {
-  static defaultProps = {
-    cacheActions: {
-      hasCache: () => {},
-      getCache: () => {},
-      setCache: () => {},
-    },
-  }
-
   state = {
     loaded: false,
     todos: [],
