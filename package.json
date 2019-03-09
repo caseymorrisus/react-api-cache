@@ -1,7 +1,7 @@
 {
   "name": "react-api-cache",
-  "version": "1.0.0",
-  "description": "React component library to help cache API data, resulting in increased performance and saved mobile data.",
+  "version": "1.0.1",
+  "description": "React component library to help cache API data, resulting in increased performance and decreased mobile data usage.",
   "main": "./dist/library.js",
   "files": [
     "/dist",

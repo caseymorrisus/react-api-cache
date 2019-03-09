@@ -1,6 +1,6 @@
 # react-api-cache
 
-React component library to help cache API data, resulting in increased performance and saved mobile data. Save trips to the server if unnecessary.
+React component library to help cache API data, resulting in increased performance and decreased mobile data usage. Save trips to the server if unnecessary.
 
 
 
