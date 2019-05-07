@@ -21,11 +21,31 @@ $ yarn add react-api-cache
 
 In this example we have a `Todos` component which fetches todos from an API on mount. If we didn't have a cache, we'd make a request every time the toggle is subsequently opened.
 
-**Usage:**
+**Hook Usage:**
+
+```jsx
+import React from 'react'
+import { useCache } from 'react-api-cache'
+import Toggle from './Toggle'
+
+export default (props) => {
+    const { actions } = useCache()
+    return (
+        <Toggle title="Todos">
+            <Todos cacheActions={actions} />
+        </Toggle>
+    )
+}
+```
+
+
+
+**Component Usage:**
 
 ```jsx
 import React from 'react'
 import Cache from 'react-api-cache'
+import Toggle from './Toggle'
 
 export default React.PureComponent {
     render() {
@@ -168,7 +188,7 @@ As seen above, on mount of our component we check if a cache exists for the URL 
 | setCache     | (url, params, data) => void       | Saves cache to store using url, params, and data passed in. *This method is considered unsafe and should be used following the`hasCache` method returning `true`.* |
 | destroyCache | (?url, ?params) => void           | Removes the cache from the store that matches the url and params combination passed in. `url` and `params` are both optional and if omitted, the entire cache will be destroyed. *This method is considered unsafe and should be used following the`hasCache` method returning `true`.* |
 
-
+![](/Users/casey/Downloads/Cache Component (2).png)
 
 ## License
 
