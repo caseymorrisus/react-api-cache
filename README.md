@@ -59,7 +59,7 @@ export default React.PureComponent {
           </Cache>
         )
     }
-}  
+}
 ```
 
 **Toggle Component:**
@@ -188,7 +188,7 @@ As seen above, on mount of our component we check if a cache exists for the URL 
 | setCache     | (url, params, data) => void       | Saves cache to store using url, params, and data passed in. *This method is considered unsafe and should be used following the`hasCache` method returning `true`.* |
 | destroyCache | (?url, ?params) => void           | Removes the cache from the store that matches the url and params combination passed in. `url` and `params` are both optional and if omitted, the entire cache will be destroyed. *This method is considered unsafe and should be used following the`hasCache` method returning `true`.* |
 
-![](/Users/casey/Downloads/Cache Component (2).png)
+![react-api-cache flowchart](https://raw.githubusercontent.com/caseymorrisus/react-api-cache/blob/master/flowchart.png)
 
 ## License
 
